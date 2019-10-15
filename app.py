@@ -1,5 +1,5 @@
 from flask import Flask,render_template
-
+from app-Copy import demo
 app=Flask(__name__)
 
 @app.route('/')
@@ -8,7 +8,7 @@ def index():
 
 @app.route('/sec')
 def second():
-	return render_template('something_went_wrong.html')
+	return demo()
 
 if __name__=="__main__":
 	app.run()
